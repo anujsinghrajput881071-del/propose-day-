@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Propose Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff4081,#f06292);
+  font-family:'Segoe UI', sans-serif;
+  color:#ffffff;
+}
+.card{
+  width:90%;
+  max-width:430px;
+  background:rgba(0,0,0,0.3);
+  padding:28px;
+  border-radius:22px;
+  text-align:center;
+}
+h1{
+  font-size:26px;
+  margin-bottom:12px;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.6;
+  margin-top:16px;
+}
+.line6{
+  display:none;
+  font-family:'Brush Script MT', cursive;
+  font-size:18px;
+  color:#00ffff; /* stylish light cyan */
+  margin-top:20px;
+  font-weight:bold;
+  line-height:1.8;
+  text-align:left;
+}
+.line7{
+  display:none;
+  margin-top:20px;
+}
+.line7 img{
+  width:4cm; /* 4cm width */
+}
+button{
+  margin-top:24px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#ffffff;
+  color:#ff4081;
+  cursor:pointer;
+}
+.signature{
+  margin-top:20px;
+  font-size:16px;
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>Hey Supriya 💌</h1>
+
+<p id="m1">Aaj Propose Day hai.</p>
+<p id="m2">Dil se ye baat kehna chahta hoon, shayad pehli baar itna clearly keh pa raha hu.</p>
+<p id="m3">Tum meri zindagi mein ek special jagah rakhti ho.</p>
+<p id="m4">Agar tum chaho, to main is rishte ko ek khoobsurat shuruaat dena chahta hoon.</p>
+<p id="m5"><b>Kya tum mere saath ye safar aage badhaana chahogi?</b></p>
+
+<p id="m6" class="line6"><b>In English we say:<br>I will love you 🥹 even more than you 😌<br>But In shayari:<br>ALADIN Said:<br>Mukammal muhobbat ka irada karunga<br>Main hath pakad ke ye vada karunga<br>Milegi mohobbat thodi si tumse<br>Yakin karo mai tumse jyada karunga 🩷</b></p>
+
+<!-- Line 7 Image -->
+<!-- Line 7 Image -->
+<p id="m7" class="line7">
+  <img src="https://github.com/anujsinghrajput881071/propose-day/blob/main/propose-boy.png?raw=true" alt="Proposing Boy">
+</p>
+
+<div class="signature" id="sign">— Tumhara pyara baccha 🩷</div>
+
+<button onclick="showMessage()">Read Message 💌</button>
+</div>
+
+<script>
+let i=1;
+function showMessage(){
+  if(i<=5){
+    document.getElementById("m"+i).style.display="block";
+    i++;
+  } else if(i==6){
+    document.getElementById("m6").style.display="block";
+    i++;
+  } else if(i==7){
+    document.getElementById("m7").style.display="block";
+    i++;
+  } else {
+    document.getElementById("sign").style.display="block";
+  }
+}
+</script>
+
+</body>
+</html>
